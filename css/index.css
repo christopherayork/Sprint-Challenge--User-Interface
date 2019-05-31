@@ -71,6 +71,12 @@ p {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 600px) {
+    .container {
+        width: 500px;
+    }
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
