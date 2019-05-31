@@ -184,6 +184,14 @@ footer nav a {
     text-decoration: none;
 }
 
+@keyframes nav-ani {
+    0%      { color: forestgreen;}
+    25%     { color: aqua; }
+    50%     { color: purple; }
+    75%     { color: red; }
+    100%    { color: yellow; }
+}
+
 #nav-top {
     display: flex;
     justify-content: space-around;
@@ -196,6 +204,13 @@ footer nav a {
     color: black;
     font-weight: bold;
     font-size: 90%;
+}
+
+#nav-top a:hover {
+    animation-name: nav-ani;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
 }
 
 #logo {
